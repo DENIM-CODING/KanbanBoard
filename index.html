@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="darkmode">
+    <h1>Kanban Board</h1>
+    <div class="container">
+      <div id="todo-board" class="board darkmode">
+        <div class="heading">
+            <h4>📝 Todo</h4>
+            <div id="todo-count" class="count">0</div>
+        </div>
+        <div id='todo' class="drop-zone">
+        </div>
+      </div>
+
+      <div id="progress-board" class="board darkmode">
+        <div class="heading"><h4>🚀 In Progress</h4><div id="inProgress-count" class="count">0</div></div>
+        <div id="inprogress" class="drop-zone">
+
+        </div>
+        
+      </div>
+
+      <div id="done-board" class="board darkmode">
+        <div class="heading"><h4>✅ Done</h4><div id="done-count" class="count">0</div></div>
+        <div id="done" class="drop-zone">
+          
+        </div>
+        
+      </div>
+      
+
+    </div>
+
+    <div id="controls">
+      <button id="add-task-btn">+ Add Task</button>
+      <div id="delete-task-area">🗑 Drop to Delete</div>
+    </div>
+
+    <div id="input-container" class="hide">
+        <input id='inputTask' type = "text" placeholder="Add the task...">
+        <button id="add" >Add</button>
+    </div>
+    <!-- <div id="button-container">
+        <button id="add-task-btn" class="task-btn">+ Add Task</button>
+        <div id="delete-task-area">- Drag Task to Delete</div>
+    </div> -->
+
+    
+   
+
+    <script src="app.js"></script>
+  </body>
+</html>
